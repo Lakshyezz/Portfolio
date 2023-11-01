@@ -1,0 +1,119 @@
+@import "../../app.scss";
+
+.hero{
+    height:  calc(100vh - 100px);
+    // background: linear-gradient(180deg, #0c0c1d, #111132);
+    background: linear-gradient(180deg, #01060B, #041321);
+    
+ 
+    overflow: hidden;
+    // padding: calc(100vw - 1366px);
+    position: relative;
+    .wrapper{
+        width: 100%;
+        max-width: 1366px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+        max-width: 1366px;
+        @include mobile{
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+           flex-direction: column;
+        }
+        .textContainer{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+           
+            
+
+            h2{
+                font-size: 32px;
+                // color: rebeccapurple;
+                color: #194168;
+                letter-spacing: 1px;
+
+            }
+            h1{
+                font-size:  72px;
+                @include mobile{
+                   font-size: 32px;
+                }
+            }
+            .app-web{
+                font-size:  32px;
+            }
+            .buttons{
+                .button1{
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+                .button2{
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: white;
+                    color: #0c0c1d;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .imageContainer{
+        overflow: hidden;
+        @include mobile{
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            width: 50%;
+        }
+        img{
+            border-radius: 400px;
+            height: calc(100vh - 400px);
+            @include mobile{
+                height: 80%;
+                margin-bottom: 100px;
+            }
+            // width: 100%;
+        }
+            // width: 70vw;
+        }
+    }
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -100px;
+        left: 0;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+    }
