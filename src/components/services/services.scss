@@ -78,16 +78,21 @@
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
-                border : none;
+                border : solid 1px white;
                 // background-color: #007FFF;
-                background-color: orange;
+                background-color: transparent;
+                color: white;
                 font-size: 24px;
                 cursor: pointer;
+                :hover{
+                    background-color: white;
+                    color: transparent;
+                }
                 @include mobile{
                     height: 50px;
                     width: 200px;
                     font-size: 16px;
-                 }
+                 } 
             }
         }
     }
