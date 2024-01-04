@@ -77,7 +77,11 @@
                 border-radius: 8px;
                 font-size: 16px;
                 font-weight: 800;
+                scale: .98;
                 cursor: pointer;
+                &:hover{
+                    scale: 1;
+                }
                 @include mobile{
                    padding: 10px;
                 }

@@ -47,11 +47,12 @@ const Hero = () => {
               initial = "initial"
               animate = "animate"
             >
-              <motion.h2 variants={textVariants}>Hey! I am Lakshay</motion.h2>
+              <motion.h2 variants={textVariants}
+              style={{color: 'lightgrey',letterSpacing: '-1px'}}>Hey! <div style={{height: '2px' , width:'16px'}}></div>  I am Lakshay</motion.h2>
               
               <motion.div variants={textVariants} className='developerText'>
-              <motion.h3 variants={textVariants} className='app-web'>App and Web</motion.h3>
-              <motion.h1 variants={textVariants}>Developer</motion.h1>
+              <motion.h3 variants={textVariants} className='app-web'> Frontend |  Backend </motion.h3>
+              <motion.h1 variants={textVariants} style={{color : '#faf9f2', letterSpacing: '-1.5px'}}>Developer</motion.h1>
               </motion.div>
               <motion.div variants={textVariants} className='buttons'>
                   <motion.button variants={textVariants} className='button1'>See the Latest Works</motion.button>

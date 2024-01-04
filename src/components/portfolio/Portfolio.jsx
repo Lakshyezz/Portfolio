@@ -76,7 +76,7 @@ const Portfolio = () => {
     ref={ref}
     >
     <div className='progress'>
-      <h1>Featured Work</h1>
+      <h1>Personal Projects</h1>
       <motion.div style={{ scaleX }} className='progressBar'></motion.div>
     </div>
       {items.map(item => <Single item={item} key={item.id}/>
